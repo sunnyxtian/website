@@ -16,6 +16,9 @@
 
     let fontButton = id('font');
     fontButton.addEventListener("click", changeFont);
+
+    // let navButton = id('nav-btn');
+    // navButton.addEventListener("click", changePage);
   }
 
   /**
@@ -28,6 +31,15 @@
     }
     return res;
   }
+
+  // /** This function switches between the pages of the website. */
+  // function changePage() {
+  //   if (window.location.pathname = "index.html") {
+  //     window.location.assign("blog.html");
+  //   } else {
+  //     window.location.assign("index.html");
+  //   }
+  // }
 
   /** This function switches the page's dark color theme or off */
   function changeColorMode() {
