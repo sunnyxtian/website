@@ -11,25 +11,11 @@
 
   /** This function allows the buttons to be clickable when the webpage loads */
   function init() {
-    console.log("js has been updated");
-    console.log("hello");
-
     let colorButton = id('theme');
     colorButton.addEventListener("click", changeColorMode);
 
     let fontButton = id('font');
     fontButton.addEventListener("click", changeFont);
-
-    window.addEventListener('mousemove', moveCursor);
-  }
-
-  // https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/
-  function moveCursor (evt) {
-    const cursor = qs('.swordCursor');
-    const mouseY = evt.clientY;
-    const mouseX = evt.clientX;
-
-    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
   }
 
   /**
@@ -49,7 +35,7 @@
     let isDark = body.classList.contains("darkMode");
 
     changeButtonText(isDark);
-    switchColorMode(isDark);
+    switchColorMode();
   }
 
   /** This function switches the page's font. */
@@ -82,20 +68,12 @@
 
   /**
    * This is a helper function that changes the theme from dark to light mode.
-   * @param {boolean} isDark - indicates if the color mode is currently set to
-   *  dark or light.
    */
-  function switchColorMode(isDark) {
+  function switchColorMode() {
     let body = qs('body');
     let header = qs('header');
-
-    if (isDark) {
-      body.classList.toggle("darkMode");
-      header.classList.toggle("darkMode");
-    } else {
-      body.classList.toggle("darkMode");
-      header.classList.toggle("darkMode");
-    }
+    body.classList.toggle("darkMode");
+    header.classList.toggle("darkMode");
   }
 
   /**
