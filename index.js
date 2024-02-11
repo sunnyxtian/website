@@ -54,8 +54,10 @@
 
   /** This function switches the page's font. */
   function changeFont() {
-    let body = qs('body');
-    body.classList.toggle("spaceBody");
+    let body = qsa('body, button');
+    for (let i = 0; i < body.length; i++) {
+      body[i].classList.toggle("spaceBody");
+    }
 
     let headers = qsa('h1, h2, h3');
     for (let i = 0; i < headers.length; i++) {
