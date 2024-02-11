@@ -19,8 +19,18 @@
 
     let fontButton = id('font');
     fontButton.addEventListener("click", changeFont);
+
+    window.addEventListener('mousemove', moveCursor);
   }
 
+  // https://www.freecodecamp.org/news/how-to-make-a-custom-mouse-cursor-with-css-and-javascript/
+  function moveCursor (evt) {
+    const cursor = qs('.swordCursor');
+    const mouseY = evt.clientY;
+    const mouseX = evt.clientX;
+
+    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+  }
 
   /**
    * This function checks the status of an api response.

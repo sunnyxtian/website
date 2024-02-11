@@ -5,6 +5,7 @@ Sunny Tian
 
 body, header {
   background-color: rgb(230, 230, 186);
+  cursor: crosshair;
 }
 
 header {
