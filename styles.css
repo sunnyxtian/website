@@ -53,7 +53,6 @@ h1, h2, h3 {
 
 h1 {
   font-size: 70px;
-  font-style: italic;
 }
 
 a, button {
@@ -86,6 +85,10 @@ header section {
   left: 20px;
 }
 
+header, footer, button {
+  font-size: 14px;
+}
+
 #suggestions, #define {
   flex-wrap: wrap;
   justify-content: left;
@@ -94,6 +97,14 @@ header section {
 .darkMode {
   background-color: rgb(70, 27, 87);
   color: rgb(230, 230, 186);
+}
+
+.spaceHeader {
+  font-family: 'Space Mono', monospace;
+}
+
+.spaceBody {
+  font-family: 'Space Grotesk', monospace;
 }
 
 .hidden {

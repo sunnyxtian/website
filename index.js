@@ -13,6 +13,9 @@
   function init() {
     let colorButton = id('theme');
     colorButton.addEventListener("click", changeColorMode);
+
+    let fontButton = id('font');
+    fontButton.addEventListener("click", changeFont);
   }
 
 
@@ -34,6 +37,17 @@
 
     changeButtonText(isDark);
     switchColorMode(isDark);
+  }
+
+  /** This function switches the page's font. */
+  function changeFont() {
+    let body = qs('body');
+    body.classList.toggle("spaceBody");
+
+    let headers = qsa('h1, h2, h3');
+    for (let i = 0; i < headers.length; i++) {
+      headers[i].classList.toggle("spaceHeader");
+    }
   }
 
   /**
@@ -61,11 +75,11 @@
     let header = qs('header');
 
     if (isDark) {
-      body.classList.remove("darkMode");
-      header.classList.remove("darkMode");
+      body.classList.toggle("darkMode");
+      header.classList.toggle("darkMode");
     } else {
-      body.classList.add("darkMode");
-      header.classList.add("darkMode");
+      body.classList.toggle("darkMode");
+      header.classList.toggle("darkMode");
     }
   }
 
@@ -95,5 +109,15 @@
    */
   function qs(selector) {
     return document.querySelector(selector);
+  }
+
+  /**
+   * This function returns a list of nodes with the given selector. If there is
+   * one node with the given selector, returns a list with one node.
+   * @param {string} selector - the given selector to match nodes to.
+   * @returns {NodeList} the nodes with the given selector.
+   */
+  function qsa(selector) {
+    return document.querySelectorAll(selector);
   }
 })();
