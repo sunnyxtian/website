@@ -1,0 +1,101 @@
+/**
+Sunny Tian
+10/04/23
+*/
+
+body, header {
+  background-color: rgb(230, 230, 186);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  opacity: 95%;
+  width: 100%;
+  align-items: center;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+body, button {
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  height: 300px;
+  width: 200px;
+  border-radius: 4px;
+}
+
+article, header, #suggestions, #define {
+  display: flex;
+}
+
+article {
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+article section, h2 {
+  padding-right: 30px;
+}
+
+h1, h2, h3 {
+  font-family: 'Xanh Mono', monospace;
+}
+
+h1 {
+  font-size: 70px;
+  font-style: italic;
+}
+
+a, button {
+  color: rgb(210, 75, 185);
+}
+
+a:visited {
+  color: rgb(132, 141, 243);
+}
+
+iframe {
+  border-radius: 12px;
+  width: 50%;
+  height: 152px;
+  border-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header section {
+  position: relative;
+  left: 20px;
+}
+
+#suggestions, #define {
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.darkMode {
+  background-color: rgb(70, 27, 87);
+  color: rgb(230, 230, 186);
+}
+
+.hidden {
+  display: none;
+}
