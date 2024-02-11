@@ -11,6 +11,8 @@
 
   /** This function allows the buttons to be clickable when the webpage loads */
   function init() {
+    console.log("js has been updated");
+    
     let colorButton = id('theme');
     colorButton.addEventListener("click", changeColorMode);
 
