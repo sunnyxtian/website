@@ -45,7 +45,8 @@ article {
 }
 
 article section, h2 {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
+  padding-right: 40px;
 }
 
 h1, h2, h3 {
