@@ -7,7 +7,7 @@ body{
   /* background-color: rgb(221, 255, 67); */
   background: url("img/catdoodle.png"), rgb(221 255 67);
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 350px;
   background-position: bottom 45px right;
 
   cursor: crosshair;
@@ -89,7 +89,7 @@ header section {
 }
 
 header, footer, button {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 footer {
