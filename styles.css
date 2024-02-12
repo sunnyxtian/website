@@ -21,11 +21,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  font-size: 16px;
 }
 
 body, button {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
 }
 
 img {
@@ -84,7 +84,7 @@ header section {
 }
 
 header, footer, button {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 footer {
@@ -103,7 +103,7 @@ footer p {
 }
 
 .darkMode {
-  background-color: rgb(55, 18, 68);
+  background-color: rgb(59, 23, 117);
   color: rgb(230, 230, 186);
 }
 
