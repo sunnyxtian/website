@@ -24,8 +24,8 @@ body {
 }
 
 body, button {
-  font-family: 'Nanum Gothic Coding', monospace;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
 }
 
 img {
@@ -45,11 +45,11 @@ article {
 }
 
 article section, h2 {
-  padding-right: 30px;
+  margin-bottom: 0px;
 }
 
 h1, h2, h3 {
-  font-family: 'Xanh Mono', monospace;
+  font-family: 'Inter Tight', sans-serif;
 }
 
 h1 {
@@ -87,7 +87,7 @@ header section {
 }
 
 header, footer, button {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #suggestions, #define {
@@ -110,4 +110,11 @@ header, footer, button {
 
 .hidden {
   display: none;
+}
+
+.bigImg {
+  width: 50%;
+  height: 50%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
