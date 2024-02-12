@@ -3,8 +3,13 @@ Sunny Tian
 10/04/23
 */
 
-body, header {
-  background-color: rgb(221, 255, 67);
+body{
+  /* background-color: rgb(221, 255, 67); */
+  background: url("img/catdoodle.png"), rgb(221 255 67);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom 20px right;
+
   cursor: crosshair;
 }
 
