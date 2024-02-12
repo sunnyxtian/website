@@ -18,6 +18,7 @@ header {
   padding: 2px;
   opacity: 95%;
   width: 100%;
+  margin-top: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -25,12 +26,17 @@ header {
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 95%;
   font-size: 16px;
 }
 
 body, button {
   font-family: 'Inter', sans-serif;
+}
+
+body p, button {
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 img {
@@ -49,8 +55,7 @@ article {
   justify-content: space-evenly;
 }
 
-article section, h2 {
-  margin-bottom: 5px;
+article section {
   padding-right: 40px;
 }
 
@@ -60,6 +65,15 @@ h1, h2, h3 {
 
 h1 {
   font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+h3 {
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 a, button {
@@ -133,6 +147,10 @@ footer p {
 
 .small {
   font-size: 12px;
+}
+
+.music {
+  margin-top: 40px;
 }
 
 #embed {
