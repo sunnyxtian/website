@@ -9,12 +9,12 @@ body, header {
 }
 
 header {
-  position: sticky;
   top: 0;
   padding: 2px;
   opacity: 95%;
   width: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 
 body {
@@ -59,10 +59,7 @@ h1 {
 
 a, button {
   color: rgb(210, 75, 185);
-}
-
-a:visited {
-  color: rgb(132, 141, 243);
+  font-weight: bold;
 }
 
 iframe {
@@ -83,12 +80,21 @@ button:hover {
 }
 
 header section {
-  position: relative;
   left: 20px;
 }
 
 header, footer, button {
   font-size: 12px;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  display: inline;
 }
 
 #suggestions, #define {
@@ -126,5 +132,4 @@ header, footer, button {
 
 #embed {
   display: inline;
-  margin-right: auto;
 }
