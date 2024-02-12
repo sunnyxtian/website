@@ -8,7 +8,7 @@ body{
   background: url("img/catdoodle.png"), rgb(221 255 67);
   background-repeat: no-repeat;
   background-size: 40%;
-  background-position: bottom 20px right;
+  background-position: bottom 45px right;
 
   cursor: crosshair;
 }
