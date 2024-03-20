@@ -128,12 +128,12 @@ footer p {
   background-color: rgb(221, 255, 67);
 }
 
-.darkMode {
+.midnight {
   background-color: rgb(59, 12, 103);
   color: rgb(255, 255, 232);
 }
 
-.darkMode a, .darkMode button {
+.midnight a, .midnight button {
   color: rgb(255, 255, 232);
 }
 

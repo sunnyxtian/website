@@ -7,7 +7,7 @@
 
 "use strict";
 (function() {
-  let themes = ["grass", "tennis", "bunny", "darkMode"];
+  let themes = ["grass", "tennis", "bunny", "midnight"];
   window.addEventListener("load", init);
 
   /** This function allows the buttons to be clickable when the webpage loads */
@@ -84,14 +84,12 @@
    */
   function switchColorMode() {
     let body = qs('body');
-    let header = qs('header');
 
     let currTheme = body.className;
     if (themes.includes(currTheme)) {
       let currIndex = themes.indexOf(currTheme);
       let nextIndex = currIndex + 1;
 
-      // if the next index is out of bounds, reset to first index.
       if (nextIndex > (themes.length - 1)) {
         nextIndex = 0;
       }
@@ -101,8 +99,6 @@
     } else {
       throw new Error("the current class applied to body is not a specified theme");
     }
-
-    // header.classList.toggle("darkMode");
   }
 
   /**
