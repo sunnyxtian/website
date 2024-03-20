@@ -128,6 +128,16 @@ footer p {
   background-color: rgb(221, 255, 67);
 }
 
+.mint {
+  /* background-color: mintcream; */
+  color: rgb(18, 120, 113);
+  background-color: mintcream;
+}
+
+.mint a, .mint button {
+  color: rgb(18, 120, 113);
+}
+
 .midnight {
   background-color: rgb(59, 12, 103);
   color: rgb(255, 255, 232);
