@@ -7,7 +7,7 @@
 
 "use strict";
 (function() {
-  let themes = ["tennis", "bunny", "darkMode"];
+  let themes = ["grass", "tennis", "bunny", "darkMode"];
   window.addEventListener("load", init);
 
   /** This function allows the buttons to be clickable when the webpage loads */

@@ -129,20 +129,32 @@ footer p {
 }
 
 .darkMode {
-  background-color: rgb(59, 23, 117);
+  background-color: rgb(59, 12, 103);
   color: rgb(255, 255, 232);
 }
 
-.tennis {
+.darkMode a, .darkMode button {
+  color: rgb(255, 255, 232);
+}
+
+.grass {
   background-color: rgb(250, 255, 255);
 }
 
-.tennis a, .tennis button {
+.grass a, .grass button {
   color:rgb(140, 172, 0)
 }
 
+.tennis {
+  background-color: rgb(221, 255, 67);
+}
+
+.tennis a, .tennis button {
+  color: black;
+}
+
 .bunny {
-  background-color:rgb(240, 229, 243)
+  background-color:rgb(255, 240, 255)
 }
 
 .bunny a, .bunny button {
