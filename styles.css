@@ -147,12 +147,12 @@ footer p {
   color: rgb(255, 255, 232);
 }
 
-.grass {
-  background-color: rgb(250, 255, 255);
+.white {
+  background-color: rgb(255, 255, 255);
 }
 
-.grass a, .grass button {
-  color:rgb(140, 172, 0)
+.white a, .white button {
+  color: rgb(0, 0, 0);
 }
 
 .tennis {
