@@ -124,6 +124,10 @@ footer p {
   justify-content: left;
 }
 
+#music-tour:hover {
+  cursor: pointer;
+}
+
 ::selection {
   background-color: rgb(221, 255, 67);
 }
