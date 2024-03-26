@@ -18,6 +18,8 @@
     let fontButton = id('font');
     fontButton.addEventListener("click", changeFont);
 
+    let musicTour = id('music-tour');
+    musicTour.addEventListener("click", changePage);
     // let navButton = id('nav-btn');
     // navButton.addEventListener("click", changePage);
   }
@@ -31,6 +33,11 @@
       throw new Error(await res.text());
     }
     return res;
+  }
+
+  /** Redirects to music tour subdomain. */
+  function changePage() {
+    window.location = "http://musictour.sunnytian.com";
   }
 
   // /** This function switches between the pages of the website. */
