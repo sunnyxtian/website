@@ -108,11 +108,9 @@ header, footer, button {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-
   width: 95%;
   margin-right: auto;
+  padding-top: 20px;
 }
 
 footer p {

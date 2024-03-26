@@ -20,8 +20,6 @@
 
     let musicTour = id('music-tour');
     musicTour.addEventListener("click", changePage);
-    // let navButton = id('nav-btn');
-    // navButton.addEventListener("click", changePage);
   }
 
   /**
@@ -39,15 +37,6 @@
   function changePage() {
     window.location = "http://musictour.sunnytian.com";
   }
-
-  // /** This function switches between the pages of the website. */
-  // function changePage() {
-  //   if (window.location.pathname = "index.html") {
-  //     window.location.assign("blog.html");
-  //   } else {
-  //     window.location.assign("index.html");
-  //   }
-  // }
 
   /** This function switches the page's dark color theme or off */
   function changeColorMode() {
