@@ -28,6 +28,7 @@ body {
   margin-right: auto;
   width: 95%;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body, button {
@@ -179,6 +180,19 @@ footer p {
 
 .spaceBody {
   font-family: 'Space Grotesk', monospace;
+}
+
+.imgs {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgs img {
+  width: 30%;
+  height: 30%;
+  padding: 10px;
 }
 
 .hidden {
