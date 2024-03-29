@@ -61,6 +61,12 @@ article section {
   padding-right: 40px;
 }
 
+#music-tour:hover, button:hover, a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(221, 255, 67);
+}
+
 h1, h2, h3 {
   font-family: 'Inter Tight', sans-serif;
   margin-bottom: 8px;
@@ -83,6 +89,10 @@ a, button {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
 iframe {
   border-radius: 12px;
   width: 50%;
@@ -93,7 +103,6 @@ iframe {
 button {
   border: none;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 button:hover {
