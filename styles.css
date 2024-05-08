@@ -4,12 +4,9 @@ Sunny Tian
 */
 
 body{
-  /* background-color: rgb(243, 243, 243); */
-  /* background: url("img/catdoodle.png"), rgb(245, 250, 251); */
   background-repeat: no-repeat;
   background-size: 350px;
   background-position: bottom 45px right;
-
   cursor: crosshair;
 }
 header {
@@ -61,7 +58,7 @@ article section {
   padding-right: 40px;
 }
 
-#music-tour:hover, button:hover, a:hover {
+#music-tour:hover, #math-club:hover, button:hover, a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(221, 255, 67);
@@ -132,7 +129,7 @@ footer p {
   justify-content: left;
 }
 
-#music-tour:hover {
+#music-tour:hover, #math-club:hover {
   cursor: pointer;
 }
 
@@ -192,7 +189,6 @@ footer p {
 }
 
 .imgs {
-  padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
@@ -214,6 +210,13 @@ footer p {
 
 .music {
   margin-top: 40px;
+}
+
+.imgFlex {
+  max-width: 700px;
+  margin: auto;
+  width: 95%;
+  height: auto;
 }
 
 #embed {

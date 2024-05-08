@@ -19,7 +19,18 @@
     fontButton.addEventListener("click", changeFont);
 
     let musicTour = id('music-tour');
-    musicTour.addEventListener("click", changePage);
+    if (musicTour) {
+      musicTour.addEventListener("click", () => {
+        changePage("music-tour");
+      });
+    }
+
+    let mathClub = id('math-club');
+    if (mathClub) {
+      mathClub.addEventListener("click", () => {
+        changePage("math-club");
+      });
+    }
   }
 
   /**
@@ -34,8 +45,13 @@
   }
 
   /** Redirects to music tour subdomain. */
-  function changePage() {
-    window.location = "http://musictour.sunnytian.com";
+  function changePage(target) {
+    console.log(target);
+    if (target == "math-club") {
+      window.location = "projects/huskymathclub.html";
+    } else if (target == "music-tour") {
+      window.location = "http://musictour.sunnytian.com";
+    }
   }
 
   /** This function switches the page's dark color theme or off */
