@@ -58,7 +58,7 @@ article section {
   padding-right: 40px;
 }
 
-#music-tour:hover, #math-club:hover, button:hover, a:hover {
+#music-tour:hover, #math-club:hover, #uxplorers:hover, #protothon:hover, button:hover, a:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(221, 255, 67);
@@ -129,7 +129,7 @@ footer p {
   justify-content: left;
 }
 
-#music-tour:hover, #math-club:hover {
+#music-tour:hover, #math-club:hover, #uxplorers:hover, #protothon:hover {
   cursor: pointer;
 }
 
