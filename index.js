@@ -31,6 +31,20 @@
         changePage("math-club");
       });
     }
+
+    let proto = id("protothon");
+    if (proto) {
+      proto.addEventListener("click", () => {
+        changePage("proto");
+      })
+    }
+
+    let uxplorers = id("uxplorers");
+    if (uxplorers) {
+      uxplorers.addEventListener("click", () => {
+        changePage("uxplorers");
+      })
+    }
   }
 
   /**
@@ -51,6 +65,10 @@
       window.location = "projects/huskymathclub.html";
     } else if (target == "music-tour") {
       window.location = "http://musictour.sunnytian.com";
+    } else if (target == "proto") {
+      window.location = "https://www.figma.com/proto/KYSxwuM97RcimUhLYD0AGO/Protothon-file?page-id=1%3A7&type=design&node-id=1-7&viewport=-218%2C-33%2C0.09&t=ql7sGLhHxy9b0kSx-1&scaling=scale-down&starting-point-node-id=182%3A1603&mode=design"
+    } else if (target == "uxplorers") {
+      window.location = "https://husky-uxplorers.web.app/";
     }
   }
 
