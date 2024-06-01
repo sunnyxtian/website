@@ -20,6 +20,17 @@
     // let fontButton = id('font');
     // fontButton.addEventListener("click", changeFont);
 
+    let name = id("title-name");
+    if (name) {
+      name.addEventListener("mouseenter", () => {
+        name.textContent = "田心's";
+      });
+
+      name.addEventListener("mouseleave", () => {
+        name.textContent = "Sunny's";
+      })
+    }
+
     let musicTour = id('music-tour');
     if (musicTour) {
       musicTour.addEventListener("click", () => {

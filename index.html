@@ -10,9 +10,20 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/rabbit.png">
     <title>Sunny's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Flow+Block&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'pfk8udj',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <script src="index.js"></script>
   </head>
 
@@ -26,7 +37,7 @@
     </header>
 
     <section>
-      <h1>Sunny's Portfolio &#128007</h1>
+      <h1> <span id="title-name">Sunny's</span> Portfolio &#128007</h1>
       <!-- make the bunny hop and go off frame when clicked. -->
     </section>
 
@@ -58,7 +69,7 @@
           UX designers at UW show their work.
         </p>
         <div>
-          <section class="tools">
+          <section class="code-tools">
             <p>React</p>
             <p>Bootstrap</p>
           </section>
@@ -77,7 +88,7 @@
           would help people time travel to the past.
         </p>
         <div>
-          <section class="tools">
+          <section class="design-tools">
             <p>Figma</p>
           </section>
         </div>
@@ -94,7 +105,7 @@
           Created website to display a year's worth of my music listening habits.
         </p>
         <div>
-          <section class="tools">
+          <section class="code-tools">
             <p>HTML/CSS/JS</p>
             <p>APIs</p>
           </section>
@@ -113,7 +124,7 @@
           find housing.
         </p>
         <div>
-          <section class="tools">
+          <section class="design-tools">
             <p>Figma</p>
           </section>
         </div>
@@ -142,7 +153,7 @@
     <article>
       <section>
         <h3>Web Development</h3>
-        <div class="tools">
+        <div class="code-tools">
           <p>HTML/CSS</p>
           <p>Javascript</p>
           <p>Node.js</p>
@@ -154,7 +165,7 @@
 
       <section>
         <h3>Design</h3>
-        <div class="tools">
+        <div class="design-tools">
           <p>Adobe Illustrator</p>
           <p>Figma</p>
         </div>
@@ -162,7 +173,7 @@
 
       <section>
         <h3>Creative Coding</h3>
-        <div class="tools">
+        <div class="createcode-tools">
           <p>Processing</p>
           <p>P5.js</p>
         </div>

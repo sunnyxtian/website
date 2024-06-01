@@ -175,11 +175,13 @@ footer {
 }
 
 .spaceHeader {
-  font-family: 'Chivo Mono', monospace;
+  font-family: "source-han-sans-tw-variable", sans-serif;
+  font-variation-settings: "wght" 500;
 }
 
 .spaceBody {
-  font-family: 'Chivo Mono', monospace;
+  font-family: "source-han-sans-tw-variable",sans-serif;
+  font-variation-settings: 'wght' 371;
 }
 
 .imgs {
@@ -202,13 +204,13 @@ footer {
   font-size: 0.8rem;
 }
 
-.tools {
+.code-tools, .design-tools, .createcode-tools {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
 }
 
-.tools p {
+.code-tools p, .design-tools p, .createcode-tools p {
   font-size: 0.8rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -217,27 +219,61 @@ footer {
   display: block;
 }
 
-.white .tools p {
-  background-color: rgb(223, 249, 107);
+.white {
+  .code-tools p, .design-tools p, .createcode-tools p {
+    background-color: rgb(223, 249, 107);
+  }
 }
 
-.bunny .tools p {
+.bunny {
+  .code-tools p, .design-tools p, .createcode-tools p {
+    background-color: rgb(249, 222, 248);
+  }
+}
+
+.mint {
+  .code-tools p, .design-tools p, .createcode-tools p {
+    color: mintcream;
+    background-color: rgb(92, 158, 153);
+  }
+
+}
+
+.midnight {
+  .code-tools p, .design-tools p, .createcode-tools p {
+    background-color:  rgb(255, 255, 232);
+    color: rgb(45, 9, 78);
+  }
+}
+
+.tennis {
+  .code-tools p, .design-tools p, .createcode-tools p {
+    background-color: whitesmoke;
+  }
+}
+
+/*
+.white .design-tools p {
+  background-color: rgb(246, 166, 231);
+}
+
+.bunny .design-tools p {
   background-color: rgb(249, 222, 248);
 }
 
-.mint .tools p {
+.mint .design-tools p {
   color: mintcream;
   background-color: rgb(92, 158, 153);
 }
 
-.midnight .tools p {
+.midnight .design-tools p {
   background-color:  rgb(255, 255, 232);
   color: rgb(45, 9, 78);
 }
 
-.tennis .tools p {
+.tennis .design-tools p {
   background-color: whitesmoke;
-}
+} */
 
 .music {
   margin-top: 40px;
