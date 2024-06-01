@@ -251,7 +251,8 @@ footer {
 }
 
 .thumbnail {
-  display: block;
+  /* display: block; */
+  display: none;
 }
 
 .thumbnail img {
