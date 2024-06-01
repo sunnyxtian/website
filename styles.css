@@ -50,12 +50,13 @@ article, header, footer, #suggestions, #define {
 }
 
 article {
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
 }
 
 article section {
-  padding-right: 40px;
+  padding-right: 5%;
 }
 
 #music-tour:hover, #math-club:hover, #uxplorers:hover, #protothon:hover, button:hover, a:hover {
@@ -118,10 +119,6 @@ footer {
   width: 95%;
   margin-right: auto;
   padding-top: 20px;
-}
-
-footer p {
-  display: inline;
 }
 
 #suggestions, #define {
@@ -255,4 +252,36 @@ footer p {
 
 #embed {
   display: inline;
+}
+
+@media (min-width: 0px) {
+  article section {
+    padding-bottom: 0.5rem;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  article section {
+    padding-bottom: 0.5rem;
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  article section {
+    max-width: 20%;
+  }
+
+  footer p {
+    display: inline;
+  }
 }
