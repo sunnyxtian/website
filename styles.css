@@ -207,6 +207,7 @@ footer {
 .tools {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 
 .tools p {
@@ -215,6 +216,7 @@ footer {
   text-align: center;
   padding: 0.5rem;
   margin-right: 0.5rem;
+  display: block;
 }
 
 .white .tools p {
@@ -255,7 +257,7 @@ footer {
 }
 
 @media (min-width: 0px) {
-  article section {
+  article > section {
     padding-bottom: 0.5rem;
   }
 
@@ -270,14 +272,14 @@ footer {
 }
 
 @media (min-width: 768px) {
-  article section {
+  article > section {
     padding-bottom: 0.5rem;
     max-width: 40%;
   }
 }
 
 @media (min-width: 992px) {
-  article section {
+  article > section {
     max-width: 20%;
   }
 
