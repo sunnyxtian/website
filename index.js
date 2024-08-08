@@ -15,7 +15,7 @@
   /** This function allows the buttons to be clickable when the webpage loads */
   function init() {
     let colorButton = id('theme');
-    colorButton.addEventListener("click", changeColorMode);
+    // colorButton.addEventListener("click", changeColorMode);
 
     // let fontButton = id('font');
     // fontButton.addEventListener("click", changeFont);
