@@ -2,5 +2,10 @@ body {
   margin: auto;
   width: 95%;
 
-  color: olivedrab;
+  /* color: olivedrab; */
+  color: blue;
+}
+
+section {
+  padding-top: 1rem;
 }
