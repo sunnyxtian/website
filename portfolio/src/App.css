@@ -1,9 +1,9 @@
 body {
+  font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
   margin: auto;
-  width: 95%;
+  width: 94%;
 
   /* color: olivedrab; */
-  color: blue;
 }
 
 section {
