@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App () {
   return (
-    <div>
+    <div className="d-flex align-items-stretch">
       <Intro />
       <Projects />
       <Experience />
