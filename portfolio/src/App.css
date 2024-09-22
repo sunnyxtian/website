@@ -1,8 +1,9 @@
 body {
+  background-color: azure;
+
   font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
   margin: auto;
   width: 94%;
-
   /* color: olivedrab; */
 }
 
