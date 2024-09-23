@@ -1,7 +1,18 @@
-function Footer () {
+function About () {
   return(
-    <section>
-      <div className="grid grid-flow-col auto-cols-auto text-sm">
+    <section className="about">
+      <h2>About</h2>
+      <div>
+        <p>
+          I'm a junior in Informatics at the University of Washington.
+
+          I'm interested in the ways coding and design intersect, from creating
+          generative designs in Processing to improving developer and designer
+          communication.
+        </p>
+      </div>
+      <h3 className="text-lg font-semibold">Find me at</h3>
+      <div className="text-sm flex">
         <div>
           <p><a href="mailto:sunnytia@uw.edu">Sunnytia@uw.edu</a></p>
         </div>
@@ -22,4 +33,4 @@ function Footer () {
   )
 }
 
-export default Footer;
+export default About;

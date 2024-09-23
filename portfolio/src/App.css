@@ -1,12 +1,44 @@
 body {
-  background-color: azure;
+  width: 100vh;
+  height: 100vh;
+
+  background-color: whitesmoke;
 
   font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
   margin: auto;
-  width: 94%;
+  width: 100%;
+  overflow-x: scroll;
   /* color: olivedrab; */
 }
 
-section {
-  padding-top: 1rem;
+.sidebar {
+  background-color: rgb(250, 238, 97);
+}
+
+.projects {
+  background-color: aquamarine;
+
+  h2 {
+    color: rgb(4, 197, 126);
+  }
+}
+
+.about {
+  background-color: pink;
+
+  h2 {
+    color: red;
+  }
+}
+
+.sidebar, .projects, .about {
+  padding: 2rem;
+}
+
+.projects, .about {
+  h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }

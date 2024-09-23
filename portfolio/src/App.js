@@ -1,14 +1,14 @@
 import './App.css';
-import Intro from './components/Intro';
+import Sidebar from './components/Sidebar';
 import Projects from './components/Projects';
-import Footer from './components/Footer';
+import About from './components/About';
 
 function App () {
   return (
-    <div className="d-flex align-items-stretch">
-      <Intro />
+    <div className="flex flex-col">
+      <Sidebar />
       <Projects />
-      <Footer />
+      <About />
     </div>
   )
 }
