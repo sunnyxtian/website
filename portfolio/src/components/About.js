@@ -14,11 +14,13 @@ function About () {
 
       <div className="copyright text-sm">
         <p>
-          <a href="https://github.com/sunnyxtian/website">Website by Sunny Tian &#8599;</a>
+          <a href="https://github.com/sunnyxtian/website" target="_blank" rel="noreferrer">
+            Website by Sunny Tian &#8599;
+          </a>
         </p>
         <p>
           <a href="https://creativecommons.org/publicdomain/zero/1.0/"
-          target="_blank">No Rights Reserved &#8599;</a>
+          target="_blank" rel="noreferrer">No Rights Reserved &#8599;</a>
         </p>
       </div>
     </section>
