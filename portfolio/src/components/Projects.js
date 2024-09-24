@@ -3,7 +3,7 @@ function Projects() {
     <div>
       <section className="projects">
         <h2 className="">Projects</h2>
-        <div class="grid grid-cols-3 gap-4">
+        <div class="">
           <article className="project-card">
             <img src="imgs/timer.png" alt="screenshot of pomodoro timer interface"></img>
             <h3 className="font-semibold">Study Timer</h3>

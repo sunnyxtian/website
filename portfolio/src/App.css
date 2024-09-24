@@ -12,11 +12,12 @@ body {
 
   margin: auto;
   width: 100%;
-  overflow-x: scroll;
+  overflow-x: hidden;
   /* color: olivedrab; */
 }
 
 h1 {
+  transition: 0.5s;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -38,13 +39,16 @@ a:hover {
   transition: 0.5s;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
 
   .links {
-    font-size: 0.9rem;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    p {
+      padding-right: 1rem;
+    }
   }
 }
 
@@ -102,7 +106,7 @@ a:hover {
 .projects, .about {
   h2 {
     transition: 0.5s;
-    font-size: 8rem;
+    font-size: 4rem;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -142,6 +146,11 @@ a:hover {
   }
 }
 
+.project-card {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
 .project-card:hover {
   cursor: pointer;
 }
@@ -166,4 +175,38 @@ a:hover {
 
 #error-page {
   padding: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  h2 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .projects h2, .about h2 {
+    font-size: 8rem;
+  }
+
+  .projects div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 50%;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .links {
+      text-align: right;
+    }
+  }
 }
