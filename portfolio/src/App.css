@@ -3,28 +3,64 @@ body {
   height: 100vh;
 
   background-color: whitesmoke;
+  color: darkslategray;
 
   font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+
   margin: auto;
   width: 100%;
   overflow-x: scroll;
   /* color: olivedrab; */
 }
 
-.sidebar {
-  background-color: rgb(250, 238, 97);
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.projects {
-  background-color: aquamarine;
+a {
+  font-weight: 400;
+}
 
-  h2 {
-    color: rgb(4, 197, 126);
+a:hover {
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .links {
+    font-size: 0.9rem;
+    text-align: right;
   }
 }
 
-.about {
-  background-color: pink;
+.sidebar:hover {
+  background-color: rgb(250, 238, 97);
+
+  h1 {
+    transition: 0.5s;
+    font-weight: bold;
+  }
+}
+
+.projects:hover {
+  transition: 0.5s;
+  background-color: #afffd8;
+
+  h2 {
+    color: #12ac8d;
+  }
+}
+
+.about:hover {
+  transition: 0.5s;
+  background-color: #FFCFDE;
 
   h2 {
     color: red;
@@ -38,7 +74,14 @@ body {
 .projects, .about {
   h2 {
     font-size: 8rem;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
+  }
+}
+
+.projects:hover, .about:hover {
+  h2 {
+    transition: 0.5s;
+    font-weight: 800;
   }
 }
