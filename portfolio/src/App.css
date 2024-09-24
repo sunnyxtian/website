@@ -58,6 +58,18 @@ a:hover {
   }
 }
 
+.about {
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+
+    p {
+      padding-right: 1rem;
+    }
+  }
+}
+
 .about:hover {
   transition: 0.5s;
   background-color: #FFCFDE;
