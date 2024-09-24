@@ -116,7 +116,9 @@ a:hover {
   img {
     transition: 0.5s;
 
-    width: 30%;
+    display: none;
+
+    /* width: 30%; */
     margin-bottom: 1rem;
     border: 0.05rem solid darkslategray;
   }
@@ -131,10 +133,10 @@ a:hover {
   img {
     transition: 0.5s;
 
-    display: block;
-    position: relative;
+    /* display: block; */
+    /* position: relative;
 
-    width: 80%;
+    width: 80%; */
   }
 }
 
@@ -152,7 +154,7 @@ a:hover {
     padding: 0.4rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-right: 1rem;
+    margin-right: 0.4rem;
     margin-bottom: 0.4rem;
 
     border: 0.05rem solid darkslategray;

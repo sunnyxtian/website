@@ -8,8 +8,8 @@ function Projects() {
             <img src="imgs/timer.png" alt="screenshot of pomodoro timer interface"></img>
             <h3 className="font-semibold">Study Timer</h3>
             <div className="tags text-sm">
-              <p>Project Management</p>
-              <p>UI/UX</p>
+              <p>Project Management &#10209;</p>
+              <p>UI/UX &#9998;</p>
               <p>Front-End Development</p>
             </div>
           </article>
