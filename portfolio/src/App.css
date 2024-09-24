@@ -45,7 +45,8 @@ a:hover {
 }
 
 .sidebar:hover {
-  background-color: rgb(250, 238, 97);
+  transition: 0.5s;
+  background-color: rgb(200, 232, 245);
 
   h1 {
     transition: 0.5s;
@@ -83,7 +84,7 @@ a:hover {
   }
 }
 
-.sidebar, .projects, .about {
+.sidebar, .projects, .about, .project-page {
   padding: 2rem;
   /* padding-bottom: 1rem; */
 }
@@ -107,4 +108,8 @@ a:hover {
     transition: 0.5s;
     font-weight: 800;
   }
+}
+
+#error-page {
+  padding: 2rem;
 }

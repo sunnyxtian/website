@@ -1,11 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, CreateBrowserRouter, RouterProvider } from 'react-router-dom';
 import './output.css';
-import App from './App';
+import App from './routes/App';
+import ErrorPage from './routes/ErrorPage';
+import ProjectPage, { SingleProject } from './routes/ProjectPage';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/projects",
+    element: <ProjectPage />,
+    children: [
+      {
+        path: 'projects/:projectId',
+        element: <SingleProject />
+      }
+    ]
+  }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
