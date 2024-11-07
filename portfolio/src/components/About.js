@@ -12,16 +12,16 @@ function About () {
         </p>
       </div>
 
-      <div className="copyright text-sm">
-        <p>
+      <div className="links">
+        <div>
           <a href="https://github.com/sunnyxtian/website" target="_blank" rel="noreferrer">
             Website by Sunny Tian &#8599;
           </a>
-        </p>
-        <p>
+        </div>
+        <div>
           <a href="https://creativecommons.org/publicdomain/zero/1.0/"
           target="_blank" rel="noreferrer">No Rights Reserved &#8599;</a>
-        </p>
+        </div>
       </div>
     </section>
   )

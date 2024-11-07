@@ -1,7 +1,7 @@
-import { Outlet, Link } from 'react-router-dom';
+// import { Outlet, Link } from 'react-router-dom';
 
 import '../App.css';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Header';
 import Projects from '../components/Projects';
 import About from '../components/About';
 

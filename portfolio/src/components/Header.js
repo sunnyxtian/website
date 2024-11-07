@@ -3,8 +3,8 @@ function Sidebar() {
     <div>
       <section className="sidebar flex flex-row">
         <div>
-          <h1>SUNNY TIAN</h1>
-          <p className="font-semibold">designer and developer</p>
+          <h1>Sunny Tian</h1>
+          <p className="font-semibold">ux designer who likes to code</p>
         </div>
 
         <div className="links text-right">
@@ -23,8 +23,6 @@ function Sidebar() {
           </div>
         </div>
       </section>
-
-      <hr></hr>
     </div>
   )
 }
