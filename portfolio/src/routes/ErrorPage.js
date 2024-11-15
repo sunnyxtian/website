@@ -7,13 +7,7 @@ function ErrorPage () {
 
   return (
     <div id="error-page">
-      <h1>OOPS!</h1>
-      <p>An error has occurred</p>
-      <p>
-        "
-        <i>{error.statusText || error.message}</i>
-        "
-      </p>
+      <p>This page does not exist</p>
       <p><a href="/" className="">go back home</a></p>
     </div>
   )

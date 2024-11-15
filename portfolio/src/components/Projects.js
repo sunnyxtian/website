@@ -5,18 +5,18 @@ function Projects() {
         <h2 className="">Projects</h2>
         <div class="">
           <article className="project-card">
-            {/* <img src="imgs/timer.png" alt="screenshot of pomodoro timer interface"></img> */}
-            <h3 className="font-semibold">Study Timer</h3>
+            <img src="imgs/timer.png" alt="screenshot of pomodoro timer interface"></img>
+            <h3 className="">Study Timer</h3>
             <div className="tags">
               <p>Project Management</p>
             </div>
           </article>
           <article className="project-card">
-            {/* <img src="imgs/husky_uxplorers.png" alt="screenshot of purple themed website">
-            </img> */}
-            <h3 className="font-semibold">Husky UXplorers</h3>
+            <img src="imgs/muse.png" alt="screenshot of muse website">
+            </img>
+            <h3 className="">Muse Website</h3>
             <div className="tags">
-              <p>Front-End Development</p>
+              <p>Web Development</p>
             </div>
           </article>
         </div>

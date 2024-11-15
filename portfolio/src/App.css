@@ -1,48 +1,43 @@
 /** Sunny Tian */
 
+:root {
+  --white-background: whitesmoke;
+  --black-text: rgb(16, 16, 16);
+  --gray-text: rgb(105, 105, 105);
+}
+
 body {
   width: 100vw;
   height: 100vh;
 
-  background-color: whitesmoke;
+  background-color: var(--white-background);
 
   font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
   text-wrap: wrap;
+  color: var(--black-text);
+  font-size: 1.2rem;
 
   margin: auto;
   padding: 2rem;
-
-  color: black;
-}
-
-a {
-  font-size: 0.9rem;
 }
 
 section {
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
+h2, h3 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.2rem;
 }
 
 a {
-  font-weight: 400;
-}
-
-a:hover {
-  transition: 0.3s;
-  font-weight: 600;
+  text-decoration: underline;
 }
 
 .projects {
+  position: absolute;
+  top: 40vh;
+
   div {
     display: flex;
     flex-direction: row;
@@ -50,65 +45,65 @@ a:hover {
   }
 }
 
-.project-card {
-  margin-bottom: 1rem;
-  margin-right: 2rem;
-}
-
-.project-card:hover {
+/* .project-card:hover {
   cursor: pointer;
-}
+} */
 
 .links {
+  padding-top: 0.4rem;
+
   display: flex;
   flex-direction: row;
 
+  color: var(--black-text);
+  font-size: 1rem;
+
   div {
-    padding-right: 1.5rem;
+    padding-right: 1rem;
+  }
+}
+
+.tags {
+  font-size: 1rem;
+  color: var(--gray-text);
+}
+
+.blurb {
+  color: var(--gray-text);
+  padding-left: 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  p {
+    padding-right: 1rem;
   }
 }
 
 @media only screen and (min-width: 400px) {
   /* For mobile: */
-  body {
-    font-size: 2rem;
-  }
-
-  a {
-    font-size: 1.8rem;
-  }
-
-  h1, h2 {
-    font-size: 2.5rem;
+  .project-card {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  body {
-    font-size: 1.5rem;
-  }
-
-  a {
-    font-size: 1.3rem;
-  }
-
-  h1, h2 {
-    font-size: 2rem;
+  .project-card {
+    width: 45%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  body {
-    font-size: 1.2rem;
-  }
-
-  a {
-    font-size: 1rem;
-  }
-
-  h1, h2 {
-    font-size: 1.6rem;
+  .project-card {
+    margin-right: 2rem;
   }
 }
