@@ -4,6 +4,11 @@
   --white-background: whitesmoke;
   --black-text: rgb(16, 16, 16);
   --gray-text: rgb(105, 105, 105);
+  --orange: #FA5B33;
+  --blood-orange: #FF3943;
+  --tennis-ball: #CAFD5B;
+  --tennis-ball-green: #C3F335;
+  --sea-blue: #99DAD1;
 }
 
 body {
@@ -34,20 +39,18 @@ a {
   text-decoration: underline;
 }
 
-.projects {
-  position: absolute;
-  top: 40vh;
+a:hover {
+  transition: 0.2s;
+  color: blue;
+}
 
+.projects {
   div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 }
-
-/* .project-card:hover {
-  cursor: pointer;
-} */
 
 .links {
   padding-top: 0.4rem;
@@ -74,8 +77,8 @@ a {
 }
 
 .footer {
-  position: fixed;
-  bottom: 2rem;
+  /* position: fixed;
+  bottom: 2rem; */
 
   display: flex;
   flex-direction: row;
@@ -84,6 +87,22 @@ a {
   p {
     padding-right: 1rem;
   }
+}
+
+.header {
+  /* position: fixed;
+  top: 2rem; */
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 @media only screen and (min-width: 400px) {

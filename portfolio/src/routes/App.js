@@ -3,14 +3,18 @@
 import '../App.css';
 import Header from '../components/Header';
 import Projects from '../components/Projects';
-import About from '../components/About';
+import Footer from '../components/Footer';
 
 function App () {
   return (
-    <div className="flex flex-col">
-      <Header />
-      {/* <Projects /> */}
-      {/* <About /> */}
+    <div className="flex-row">
+      <div className="flex-col">
+        <Header />
+        <Footer />
+      </div>
+      <div className="flex-col">
+        <Projects />
+      </div>
     </div>
   )
 }

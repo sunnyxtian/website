@@ -2,23 +2,24 @@ function Projects() {
   return(
     <div>
       <section className="projects">
-        <h2 className="">Projects</h2>
-        <div class="">
-          <article className="project-card">
-            <img src="imgs/timer.png" alt="screenshot of pomodoro timer interface"></img>
-            <h3 className="">Study Timer</h3>
-            <div className="tags">
-              <p>Project Management</p>
-            </div>
-          </article>
-          <article className="project-card">
-            <img src="imgs/muse.png" alt="screenshot of muse website">
-            </img>
-            <h3 className="">Muse Website</h3>
-            <div className="tags">
-              <p>Web Development</p>
-            </div>
-          </article>
+        <div>
+          <p>Coming Soon</p>
+          <p className="blurb">UX Design + Development</p>
+        </div>
+
+        <div>
+          <p><a href="https://www.musemediauw.com/">Muse Website</a></p>
+          <p className="blurb">Wordpress Development</p>
+        </div>
+
+        <div>
+          <p><a href="https://musictour.sunnytian.com/">Music Tour</a></p>
+          <p className="blurb">Web Development</p>
+        </div>
+
+        <div>
+          <p><a href="https://www.instagram.com/huskymathclub">Husky Math Club</a></p>
+          <p className="blurb">Social Media Design</p>
         </div>
       </section>
     </div>

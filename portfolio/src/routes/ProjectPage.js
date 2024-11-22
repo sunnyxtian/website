@@ -1,4 +1,4 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet, Link, useParams } from 'react-router-dom';
 import '../App.css';
 
 function ProjectPage() {
@@ -12,10 +12,12 @@ function ProjectPage() {
   );
 }
 
-export function SingleProject() {
+export function SingleProject(params) {
+  const { projectId } = useParams();
+
   return (
     <div>
-      <h1>Pomodoro</h1>
+      <h1>{projectId}</h1>
     </div>
   )
 }
