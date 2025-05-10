@@ -1,24 +1,14 @@
 function Projects() {
   return(
     <div>
-      <section className="projects">
-        <div>
-          <p>Coming Soon</p>
-          <p className="blurb">UX Design + Development</p>
+      <section className="projects flex flex-col">
+        <div className="mb-5">
+          <h2>Muse Magazine Spreads</h2>
+          <p className="blurb">Publication Design</p>
         </div>
 
-        <div>
-          <p><a href="https://www.musemediauw.com/">Muse Website</a></p>
-          <p className="blurb">Wordpress Development</p>
-        </div>
-
-        <div>
-          <p><a href="https://musictour.sunnytian.com/">Music Tour</a></p>
-          <p className="blurb">Web Development</p>
-        </div>
-
-        <div>
-          <p><a href="https://www.instagram.com/huskymathclub">Husky Math Club</a></p>
+        <div className="mb-5">
+          <h2>Muse Social Media</h2>
           <p className="blurb">Social Media Design</p>
         </div>
       </section>

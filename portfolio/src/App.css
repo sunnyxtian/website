@@ -1,5 +1,9 @@
 /** Sunny Tian */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --white-background: whitesmoke;
   --black-text: rgb(16, 16, 16);
@@ -11,23 +15,29 @@
   --sea-blue: #99DAD1;
 }
 
+@theme {
+}
+
+#root {
+  width: 100%;
+}
+
 body {
-  width: 100vw;
   height: 100vh;
+
+  display: flex;
+  align-items: center;
 
   background-color: var(--white-background);
 
-  font-family: 'Public Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Public Sans', 'Chivo Mono', 'Helvetica Neue', sans-serif;
   text-wrap: wrap;
   color: var(--black-text);
   font-size: 1.2rem;
 
   margin: auto;
-  padding: 2rem;
-}
-
-section {
-  padding-bottom: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 
 h2, h3 {
@@ -37,6 +47,7 @@ h2, h3 {
 
 a {
   text-decoration: underline;
+  font-family: 'Chivo Mono';
 }
 
 a:hover {
@@ -44,12 +55,8 @@ a:hover {
   color: blue;
 }
 
-.projects {
-  div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+.footer {
+  color: var(--gray-text);
 }
 
 .links {
@@ -73,56 +80,27 @@ a:hover {
 
 .blurb {
   color: var(--gray-text);
-  padding-left: 1rem;
 }
 
-.footer {
-  /* position: fixed;
-  bottom: 2rem; */
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  p {
-    padding-right: 1rem;
-  }
-}
-
-.header {
-  /* position: fixed;
-  top: 2rem; */
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
 
 @media only screen and (min-width: 400px) {
   /* For mobile: */
-  .project-card {
+  /* .project-card {
     width: 100%;
     margin-bottom: 1rem;
-  }
+  } */
 }
 
 @media only screen and (min-width: 600px) {
   /* For tablets: */
-  .project-card {
+  /* .project-card {
     width: 45%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
-  .project-card {
+  /* .project-card {
     margin-right: 2rem;
-  }
+  } */
 }
