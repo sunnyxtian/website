@@ -32,4 +32,41 @@ function App () {
   )
 }
 
+// code format from https://ryanyan.ca/
+const colors = ["#C3F335", "#99DAD1", "#FA5B33"];
+const text = ["*", "✧", "✩", "+"];
+
+let lastParticle = 0;
+const particleInterval = 150;
+
+document.addEventListener("mousemove", (e) => {
+  const currTime = Date.now();
+
+  if(currTime - lastParticle >= particleInterval) {
+    const particle = document.createElement('div');
+    particle.classList.add('mouse-effects');
+    document.body.appendChild(particle);
+
+    let x = e.clientX;
+    let y = e.clientY;
+
+    particle.style.left = `${x}px`;
+    particle.style.top = `${y}px`;
+
+    const colorIndex = Math.floor(Math.random() * 3);
+    const textIndex = Math.floor(Math.random() * (text.length));
+    const randomColor = colors[colorIndex];
+    particle.textContent = text[textIndex];
+
+    particle.style.color = randomColor;
+
+    // timeout
+    setTimeout(() => {
+      particle.remove();
+    }, 1500);
+
+    lastParticle = currTime;
+  }
+});
+
 export default App;
