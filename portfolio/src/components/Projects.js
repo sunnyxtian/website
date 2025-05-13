@@ -1,17 +1,17 @@
 function Projects() {
-  function handleHover() {
+  // function handleHover() {
     // First, format project bios as a JSON.
     // Then, add an image path within the JSON.
     // Populate the list of projects dynamically
       // Can create seperate, projectCard component that takes in the JSON data.
     // This function will take the key or some identifying value
       // then finds the corresponding image to display
-  }
+  // }
 
   return(
     <div>
       <section className="projects flex flex-col">
-        <div className="project-spreads mb-5">
+        <div id="muse-spreads" className="project-spreads mb-5">
           <h2>Muse Magazine Spreads</h2>
           <p className="blurb">Publication Design</p>
           <p className="tags text-base text-gray font-mono">2025</p>
@@ -26,5 +26,13 @@ function Projects() {
     </div>
   )
 }
+
+// const project1 = document.getElementsByClassName("project-spreads");
+
+// project1.addEventListener("mouseover", (e) => {
+//   const image = document.createElement("div");
+//   document.body.appendChild(image);
+
+// });
 
 export default Projects;
