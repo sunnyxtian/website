@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 :root {
+  /* FONTS */
+  --sans: 'Public Sans', sans-serif;
+  --mono: 'Chivo Mono', sans-serif;
+
   --white-background: whitesmoke;
   --black-text: rgb(16, 16, 16);
   --gray-text: rgb(105, 105, 105);
@@ -16,6 +20,10 @@
 }
 
 @theme {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --color-gray: var(--gray-text);
 }
 
 #root {
@@ -29,8 +37,8 @@ body {
   align-items: center;
 
   background-color: var(--white-background);
+  font-family: var(--sans);
 
-  font-family: 'Public Sans', 'Chivo Mono', 'Helvetica Neue', sans-serif;
   text-wrap: wrap;
   color: var(--black-text);
   font-size: 1.2rem;
@@ -47,12 +55,37 @@ h2, h3 {
 
 a {
   text-decoration: underline;
-  font-family: 'Chivo Mono';
+  font-family: var(--mono);
+  transition: 0.2s;
 }
 
 a:hover {
   transition: 0.2s;
   color: blue;
+}
+
+.project-spreads {
+  img {
+    display: none;
+  }
+}
+
+.project-spreads:hover {
+  img {
+    display: block;
+  }
+}
+
+.project-social {
+  img {
+    display: none;
+  }
+}
+
+.project-social:hover {
+  img {
+    display: block;
+  }
 }
 
 .footer {
